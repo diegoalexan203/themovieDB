@@ -14,14 +14,15 @@ import XCTest
 @testable import Condor_TheMoviesApp
 
 class FakeMoviesService: MoviesServiceProtocol {
+
+    func create(movie: Movie)  -> Observable<Int64> {
+        return Observable<Int64>.from(optional: 1)
+    }
+    
     func getMovies(page: String) throws -> Observable<[Movie]> {
         let listOfMovies = [Movie](arrayLiteral: Movie(title: "Spiderman", popularity: 300, movieID: 1, voteCount: 20, originalTitle: "Spiderman", voteAverage: 5.9, sinopsis: "Spiderman", releaseDate: "03/02/1984", image: "String"))
         
         return Observable<[Movie]>.from(optional: listOfMovies)
-    }
-    
-    func saveLocalMovie(movie: Movie) {
-    
     }
     
     func getLocalMovies() throws -> Observable<[Movie]> {

@@ -12,7 +12,6 @@
 		5B10390127D6CB20001EF93E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B10390027D6CB20001EF93E /* SceneDelegate.swift */; };
 		5B10390827D6CB21001EF93E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B10390727D6CB21001EF93E /* Assets.xcassets */; };
 		5B10390B27D6CB21001EF93E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B10390927D6CB21001EF93E /* LaunchScreen.storyboard */; };
-		5B10391627D6CB21001EF93E /* Condor_TheMoviesAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B10391527D6CB21001EF93E /* Condor_TheMoviesAppTests.swift */; };
 		5B10393627D6FB12001EF93E /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B10393527D6FB12001EF93E /* Movies.swift */; };
 		5B10393927D6FB5D001EF93E /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B10393727D6FB5D001EF93E /* MoviesViewController.swift */; };
 		5B10393A27D6FB5D001EF93E /* MoviesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B10393827D6FB5D001EF93E /* MoviesViewController.xib */; };
@@ -50,6 +49,7 @@
 		5B1A0E4A27ECE3B400CD18AA /* FakeMoviesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1A0E4927ECE3B400CD18AA /* FakeMoviesService.swift */; };
 		5B4C1AD427DBB3B900EADD3B /* DetailsMoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4C1AD227DBB3B900EADD3B /* DetailsMoviesViewController.swift */; };
 		5B4C1AD527DBB3B900EADD3B /* DetailsMoviesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B4C1AD327DBB3B900EADD3B /* DetailsMoviesViewController.xib */; };
+		5B7DD33027ECF72C00B831A7 /* DetailsMoviesViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7DD32F27ECF72C00B831A7 /* DetailsMoviesViewModelTest.swift */; };
 		5BD32CB527E9554400A986A1 /* DetailsMoviesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD32CB427E9554400A986A1 /* DetailsMoviesViewModel.swift */; };
 		5BD32CB727E96A2400A986A1 /* LocalMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD32CB627E96A2400A986A1 /* LocalMovieViewController.swift */; };
 		5BD32CB927E96BC700A986A1 /* LocalMovieViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD32CB827E96BC700A986A1 /* LocalMovieViewController+Extension.swift */; };
@@ -82,7 +82,6 @@
 		5B10390A27D6CB21001EF93E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B10390C27D6CB21001EF93E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B10391127D6CB21001EF93E /* Condor.TheMoviesAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Condor.TheMoviesAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B10391527D6CB21001EF93E /* Condor_TheMoviesAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Condor_TheMoviesAppTests.swift; sourceTree = "<group>"; };
 		5B10393527D6FB12001EF93E /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
 		5B10393727D6FB5D001EF93E /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 		5B10393827D6FB5D001EF93E /* MoviesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoviesViewController.xib; sourceTree = "<group>"; };
@@ -101,6 +100,7 @@
 		5B1A0E4927ECE3B400CD18AA /* FakeMoviesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeMoviesService.swift; sourceTree = "<group>"; };
 		5B4C1AD227DBB3B900EADD3B /* DetailsMoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsMoviesViewController.swift; sourceTree = "<group>"; };
 		5B4C1AD327DBB3B900EADD3B /* DetailsMoviesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsMoviesViewController.xib; sourceTree = "<group>"; };
+		5B7DD32F27ECF72C00B831A7 /* DetailsMoviesViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsMoviesViewModelTest.swift; sourceTree = "<group>"; };
 		5BD32CB427E9554400A986A1 /* DetailsMoviesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsMoviesViewModel.swift; sourceTree = "<group>"; };
 		5BD32CB627E96A2400A986A1 /* LocalMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalMovieViewController.swift; sourceTree = "<group>"; };
 		5BD32CB827E96BC700A986A1 /* LocalMovieViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocalMovieViewController+Extension.swift"; sourceTree = "<group>"; };
@@ -174,9 +174,9 @@
 		5B10391427D6CB21001EF93E /* Condor.TheMoviesAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				5B10391527D6CB21001EF93E /* Condor_TheMoviesAppTests.swift */,
-				5B1A0E2C27EAC7F500CD18AA /* MoviesViewModelTest.swift */,
 				5B1A0E4B27ECE3BB00CD18AA /* Fakes */,
+				5B1A0E2C27EAC7F500CD18AA /* MoviesViewModelTest.swift */,
+				5B7DD32F27ECF72C00B831A7 /* DetailsMoviesViewModelTest.swift */,
 			);
 			path = Condor.TheMoviesAppTests;
 			sourceTree = "<group>";
@@ -548,6 +548,7 @@
 				5B1A0E3827EAD0F500CD18AA /* ViewModelProtocol.swift in Sources */,
 				5B1A0E4427EAE38A00CD18AA /* LocalMoviesViewModel.swift in Sources */,
 				5B1A0E4127EAE37900CD18AA /* LocalMovieViewController.swift in Sources */,
+				5B7DD33027ECF72C00B831A7 /* DetailsMoviesViewModelTest.swift in Sources */,
 				5B1A0E3E27EAE36800CD18AA /* CustomMovieTableViewCell.swift in Sources */,
 				5B1A0E4527EAE3B700CD18AA /* Extensions.swift in Sources */,
 				5B1A0E3027EAD08F00CD18AA /* MoviesService.swift in Sources */,
@@ -556,7 +557,6 @@
 				5B1A0E3227EAD09900CD18AA /* MoviesBDRepositoryProtocol.swift in Sources */,
 				5B1A0E3F27EAE36F00CD18AA /* MoviesViewController+Extension.swift in Sources */,
 				5B1A0E4027EAE37600CD18AA /* DetailsMoviesViewController.swift in Sources */,
-				5B10391627D6CB21001EF93E /* Condor_TheMoviesAppTests.swift in Sources */,
 				5B1A0E3427EAD09F00CD18AA /* MoviesBDRepository.swift in Sources */,
 				5B1A0E4227EAE37D00CD18AA /* LocalMovieViewController+Extension.swift in Sources */,
 				5B1A0E2B27EAC7C000CD18AA /* MoviesViewModel.swift in Sources */,

@@ -30,8 +30,8 @@ class MoviesService: MoviesServiceProtocol {
         })
     }
     
-    func saveLocalMovie(movie: Movie) {
-        self.moviesBDRepository.create(movie: movie)
+    func create(movie: Movie)  -> Observable<Int64> {
+        return  self.moviesBDRepository.create(movie: movie)
     }
     
     func getLocalMovies() throws -> Observable<[Movie]> {

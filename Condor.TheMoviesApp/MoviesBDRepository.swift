@@ -69,13 +69,14 @@ class MoviesBDRepository: MoviesBDRepositoryProtocol {
         }) as! Observable<Bool>
     }
 
-    func create(movie: Movie) {
+    func create(movie: Movie)  -> Observable<Int64> {
         let movieToInsert = moviesTable.insert(movieID <- movie.movieID, originalTitle <- movie.originalTitle, title <- movie.title, releaseDate <- movie.releaseDate, popularity <- movie.popularity, voteCount <- movie.voteCount, voteAverage <- movie.voteAverage, sinopsis <- movie.sinopsis, image <- movie.image)
 
         do {
-            try moviesDB.run(movieToInsert)
-            print("Movie registered successfully")
+            let resp =  try moviesDB.run(movieToInsert)
+            return Observable<Int64>.from(optional: resp)
         } catch {
+            return Observable<Int64>.from(optional: 0)
             print(error)
         }
     }

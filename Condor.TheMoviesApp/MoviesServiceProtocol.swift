@@ -10,7 +10,7 @@ import RxSwift
 
 protocol MoviesServiceProtocol {
     func getMovies(page: String) throws -> Observable<[Movie]>
-    func saveLocalMovie(movie: Movie)
+    func create(movie: Movie) -> Observable<Int64>
     func getLocalMovies() throws -> Observable<[Movie]>
     func getLocalMovieById(movieId: Int) throws -> Observable<Movie?>
 }

@@ -11,6 +11,6 @@ import RxSwift
 protocol MoviesBDRepositoryProtocol {
     func getMovies() throws -> Observable<[Movie]>
     func deleteMovie (movieId: Int) throws -> Observable<Bool>
-    func create(movie: Movie)
+    func create(movie: Movie)  -> Observable<Int64>
     func getMovieById(movieId: Int) throws -> Observable<Movie?> 
 }
