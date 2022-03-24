@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomMovieCell" rowHeight="200" id="KGk-i7-Jjw" customClass="CustomMovieTableViewCell" customModule="Condor_TheMoviesApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pwd-4N-53E">
+                        <rect key="frame" x="10" y="10" width="128" height="180"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name of movie:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sei-IN-qTD" userLabel="nameTittleLabel">
+                        <rect key="frame" x="158" y="30" width="126.5" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KCE-4y-X1M" userLabel="nameLabel">
+                        <rect key="frame" x="158" y="66" width="142" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vote average:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0C0-4a-BY5">
+                        <rect key="frame" x="158" y="106.5" width="112" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nqo-dx-fCG" userLabel="voteLabel">
+                        <rect key="frame" x="158" y="142.5" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="KCE-4y-X1M" firstAttribute="leading" secondItem="Pwd-4N-53E" secondAttribute="trailing" constant="20" id="3pX-SA-YC1"/>
+                    <constraint firstItem="0C0-4a-BY5" firstAttribute="top" secondItem="KCE-4y-X1M" secondAttribute="bottom" constant="20" id="4ek-gM-WXH"/>
+                    <constraint firstItem="Nqo-dx-fCG" firstAttribute="top" secondItem="0C0-4a-BY5" secondAttribute="bottom" constant="15" id="DF3-3V-7KG"/>
+                    <constraint firstAttribute="bottom" secondItem="Pwd-4N-53E" secondAttribute="bottom" constant="10" id="Lx3-eZ-NMz"/>
+                    <constraint firstItem="Sei-IN-qTD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="UFB-e5-Fcr"/>
+                    <constraint firstItem="Nqo-dx-fCG" firstAttribute="leading" secondItem="Pwd-4N-53E" secondAttribute="trailing" constant="20" id="bmE-4K-rSk"/>
+                    <constraint firstItem="0C0-4a-BY5" firstAttribute="leading" secondItem="Pwd-4N-53E" secondAttribute="trailing" constant="20" id="ghI-M1-nX4"/>
+                    <constraint firstItem="KCE-4y-X1M" firstAttribute="top" secondItem="Sei-IN-qTD" secondAttribute="bottom" constant="15" id="glM-s3-HCT"/>
+                    <constraint firstItem="Pwd-4N-53E" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="hSt-x2-MIo"/>
+                    <constraint firstItem="Pwd-4N-53E" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="jKq-Vr-0No"/>
+                    <constraint firstItem="Sei-IN-qTD" firstAttribute="leading" secondItem="Pwd-4N-53E" secondAttribute="trailing" constant="20" id="jfb-uT-8Ly"/>
+                    <constraint firstAttribute="trailing" secondItem="KCE-4y-X1M" secondAttribute="trailing" constant="20" id="qpI-z4-Kbr"/>
+                    <constraint firstItem="Pwd-4N-53E" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.4" id="sTv-Ze-tPW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="movieUiImage" destination="Pwd-4N-53E" id="ffb-5i-Ja3"/>
+                <outlet property="nameLabel" destination="KCE-4y-X1M" id="Cq2-Ch-ICZ"/>
+                <outlet property="voteLabel" destination="Nqo-dx-fCG" id="I8F-s3-RIq"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="125.89285714285714"/>
+        </tableViewCell>
+    </objects>
+</document>
