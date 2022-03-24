@@ -24,21 +24,6 @@ class MoviesViewModelTest: XCTestCase {
         disposebag = DisposeBag()
     }
 
-
-//    func testGestPostUserExist() {
-//        let fake = FakePostsBL()
-//        let viewModel = DetailsUserPostsViewModel(postsBl: fake)
-//        viewModel.input.viewShown.accept(true)
-//        viewModel.input.userId.accept("1")
-//
-//        let posts = scheduler.createObserver([Post]?.self)
-//        viewModel.output.posts.asDriver().drive(posts).disposed(by: disposebag)
-//
-//        scheduler.start()
-//        let postsReturn = viewModel.output.posts.value
-//        XCTAssertNotNil(postsReturn)
-//
-//    }
     func testGetMovies(){
         let fake = FakeMoviesService()
         let viewModel = MoviesViewModel(moviesService: fake)
