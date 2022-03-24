@@ -5,6 +5,8 @@ PODS:
   - RxRelay (6.5.0):
     - RxSwift (= 6.5.0)
   - RxSwift (6.5.0)
+  - RxTest (6.5.0):
+    - RxSwift (= 6.5.0)
   - SQLite.swift (0.12.2):
     - SQLite.swift/standard (= 0.12.2)
   - SQLite.swift/standard (0.12.2)
@@ -12,6 +14,7 @@ PODS:
 DEPENDENCIES:
   - RxCocoa
   - RxSwift
+  - RxTest
   - SQLite.swift (~> 0.12.0)
 
 SPEC REPOS:
@@ -19,14 +22,16 @@ SPEC REPOS:
     - RxCocoa
     - RxRelay
     - RxSwift
+    - RxTest
     - SQLite.swift
 
 SPEC CHECKSUMS:
   RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
   RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
   RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  RxTest: eb2d23adefc5a5ebf5779c7792fa3edfe6ebcc17
   SQLite.swift: d2b4642190917051ce6bd1d49aab565fe794eea3
 
-PODFILE CHECKSUM: ee64b3b536e45a3124094ed31fc0dc7bbacfc1dd
+PODFILE CHECKSUM: 2c2d48be2039aa9031fc322338dbb0989b7361ba
 
 COCOAPODS: 1.11.2

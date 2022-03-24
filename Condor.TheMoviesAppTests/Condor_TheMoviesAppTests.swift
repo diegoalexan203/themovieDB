@@ -6,7 +6,6 @@
 //
 
 import XCTest
-import Mockingbird
  
 @testable import Condor_TheMoviesApp
 

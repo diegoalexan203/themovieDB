@@ -17,6 +17,7 @@ target 'Condor.TheMoviesApp' do
     pod 'RxSwift'
     pod 'RxCocoa'
     pod 'SQLite.swift', '~> 0.12.0'
+    pod 'RxTest'
   end
 
 end

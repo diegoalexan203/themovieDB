@@ -12,7 +12,7 @@ import RxSwift
 class MoviesViewModel: ViewModelProtocol {
     // MARK: - Properties
     private weak var view: MoviesViewController?
-    var moviesService: MoviesService
+    var moviesService: MoviesServiceProtocol
     let disposeBag = DisposeBag()
     let input: Input
     let output: Output
@@ -34,7 +34,7 @@ class MoviesViewModel: ViewModelProtocol {
         getMovies()
     }
 
-    init(moviesService: MoviesService) {
+    init(moviesService: MoviesServiceProtocol) {
         input = Input()
         output = Output()
         self.moviesService = moviesService
@@ -49,7 +49,6 @@ class MoviesViewModel: ViewModelProtocol {
                         try
                             self.moviesService.getMovies(page: page!).asObservable().retry(1)
                             .subscribe(onNext: { response in
-
                                 self.output.movies.accept(response)
                             }).disposed(by: self.disposeBag)
 
