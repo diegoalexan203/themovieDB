@@ -12,7 +12,7 @@ class LocalMoviesViewModel: ViewModelProtocol {
     
     // MARK: - Properties
     private weak var view: LocalMovieViewController?
-    var moviesService: MoviesService
+    var moviesService: MoviesServiceProtocol
     let disposeBag = DisposeBag()
     let input: Input
     let output: Output
@@ -24,7 +24,6 @@ class LocalMoviesViewModel: ViewModelProtocol {
 
     struct Output {
         var movies = BehaviorRelay<[Movie]?>(value: nil)
-        var isLoading = BehaviorRelay<Bool>(value: false)
     }
     
     init() {
@@ -34,7 +33,7 @@ class LocalMoviesViewModel: ViewModelProtocol {
         bind()
     }
 
-    init(moviesService: MoviesService) {
+    init(moviesService: MoviesServiceProtocol) {
         input = Input()
         output = Output()
         self.moviesService = moviesService
